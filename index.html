@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Menú principal</title>
+
+    <script src="js/menu.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        let h1 = crearNodoConTexto('h1', 'Menú principal');
+
+        let p = crearNodoConTexto(
+            'p',
+            'Selecciona la página que deseas visitar.'
+        );
+
+        adicionarElementoABody(h1);
+        adicionarElementoABody(p);
+
+        let contenedor = crearElemento('div');
+
+        let enlaceUno = crearElemento('a');
+        enlaceUno.textContent = 'Ir a la página 1';
+        enlaceUno.href = 'ejemplo1.html';
+
+        let enlaceDos = crearElemento('a');
+        enlaceDos.textContent = 'Ir a la página 2';
+        enlaceDos.href = 'ejemplo2.html';
+
+        adicionarElementoAContenedor(enlaceUno, contenedor);
+        adicionarElementoAContenedor(enlaceDos, contenedor);
+
+        adicionarElementoABody(contenedor);
+
+    </script>
+
+</body>
+</html>

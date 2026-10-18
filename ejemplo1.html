@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Pupo Castro">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/ejercicio1.js"></script>
+    <title>Gastronomia Rapida</title>
+</head>
+
+<body>
+
+    <script>
+
+        
+        let pagina = crearElemento('div');
+        pagina.classList.add('pagina');
+
+        
+        let titulo = crearElemento('div');
+        titulo.classList.add('titulo');
+
+        let h1 = crearNodoConTexto('h1', 'Gastronomia Rapida');
+
+        adicionarElementoAContenedor(h1, titulo);
+        adicionarElementoAContenedor(titulo, pagina);
+
+        
+        let contenedor = crearElemento('div');
+        contenedor.classList.add('contenedor');
+
+        
+        let tarjeta = crearElemento('div');
+        tarjeta.classList.add('tarjeta');
+
+        let imagen = crearElemento('img');
+        imagen.src = 'recursos/imagenes/McDonadls.png';
+        imagen.alt = 'McDonalds';
+
+        let texto = crearNodoConTexto('p', 'McDonadls');
+
+        adicionarElementoAContenedor(imagen, tarjeta);
+        adicionarElementoAContenedor(texto, tarjeta);
+        adicionarElementoAContenedor(tarjeta, contenedor);
+
+        
+        let tarjetaDos = crearElemento('div');
+        tarjetaDos.classList.add('tarjeta');
+
+        let imagenDos = crearElemento('img');
+        imagenDos.src = 'recursos/imagenes/papa johns.png';
+        imagenDos.alt = 'Papa Johns';
+
+        let textoDos = crearNodoConTexto('p', 'papas johns');
+
+        adicionarElementoAContenedor(imagenDos, tarjetaDos);
+        adicionarElementoAContenedor(textoDos, tarjetaDos);
+        adicionarElementoAContenedor(tarjetaDos, contenedor);
+
+        
+        let tarjetaTres = crearElemento('div');
+        tarjetaTres.classList.add('tarjeta');
+
+        let imagenTres = crearElemento('img');
+        imagenTres.src = 'recursos/imagenes/starbuck.png';
+        imagenTres.alt = 'Starbucks';
+
+        let textoTres = crearNodoConTexto('p', 'starbuck');
+
+        adicionarElementoAContenedor(imagenTres, tarjetaTres);
+        adicionarElementoAContenedor(textoTres, tarjetaTres);
+        adicionarElementoAContenedor(tarjetaTres, contenedor);
+
+        
+        let tarjetaCuatro = crearElemento('div');
+        tarjetaCuatro.classList.add('tarjeta');
+
+        let imagenCuatro = crearElemento('img');
+        imagenCuatro.src = 'recursos/imagenes/Subway.png';
+        imagenCuatro.alt = 'Subway';
+
+        let textoCuatro = crearNodoConTexto('p', 'SubWay');
+
+        adicionarElementoAContenedor(imagenCuatro, tarjetaCuatro);
+        adicionarElementoAContenedor(textoCuatro, tarjetaCuatro);
+        adicionarElementoAContenedor(tarjetaCuatro, contenedor);
+
+        
+        let tarjetaCinco = crearElemento('div');
+        tarjetaCinco.classList.add('tarjeta');
+
+        let imagenCinco = crearElemento('img');
+        imagenCinco.src = 'recursos/imagenes/taco bell.png';
+        imagenCinco.alt = 'Taco Bell';
+
+        let textoCinco = crearNodoConTexto('p', 'Taco bell');
+
+        adicionarElementoAContenedor(imagenCinco, tarjetaCinco);
+        adicionarElementoAContenedor(textoCinco, tarjetaCinco);
+        adicionarElementoAContenedor(tarjetaCinco, contenedor);
+
+        
+        let tarjetaSeis = crearElemento('div');
+        tarjetaSeis.classList.add('tarjeta');
+
+        let imagenSeis = crearElemento('img');
+        imagenSeis.src = 'recursos/imagenes/Wendys.png';
+        imagenSeis.alt = 'Wendys';
+
+        let textoSeis = crearNodoConTexto('p', 'Wendys');
+
+        adicionarElementoAContenedor(imagenSeis, tarjetaSeis);
+        adicionarElementoAContenedor(textoSeis, tarjetaSeis);
+        adicionarElementoAContenedor(tarjetaSeis, contenedor);
+
+        
+        let tarjetaSiete = crearElemento('div');
+        tarjetaSiete.classList.add('tarjeta');
+
+        let imagenSiete = crearElemento('img');
+        imagenSiete.src = 'recursos/imagenes/Dukin.png';
+        imagenSiete.alt = 'Dunkin';
+
+        let textoSiete = crearNodoConTexto('p', 'Dunkin');
+
+        adicionarElementoAContenedor(imagenSiete, tarjetaSiete);
+        adicionarElementoAContenedor(textoSiete, tarjetaSiete);
+        adicionarElementoAContenedor(tarjetaSiete, contenedor);
+
+        
+        let tarjetaOcho = crearElemento('div');
+        tarjetaOcho.classList.add('tarjeta');
+
+        let imagenOcho = crearElemento('img');
+        imagenOcho.src = 'recursos/imagenes/Captura de pantalla 2026-10-03 075628.png';
+        imagenOcho.alt = 'KFC';
+
+        let textoOcho = crearNodoConTexto('p', 'KFC');
+
+        adicionarElementoAContenedor(imagenOcho, tarjetaOcho);
+        adicionarElementoAContenedor(textoOcho, tarjetaOcho);
+        adicionarElementoAContenedor(tarjetaOcho, contenedor);
+
+        
+        let tarjetaNueve = crearElemento('div');
+        tarjetaNueve.classList.add('tarjeta');
+        tarjetaNueve.classList.add('ultima');
+
+        let imagenNueve = crearElemento('img');
+        imagenNueve.src = 'recursos/imagenes/rappi.jpg';
+        imagenNueve.alt = '';
+
+        let textoNueve = crearNodoConTexto('p', 'Rappi');
+
+        adicionarElementoAContenedor(imagenNueve, tarjetaNueve);
+        adicionarElementoAContenedor(textoNueve, tarjetaNueve);
+        adicionarElementoAContenedor(tarjetaNueve, contenedor);
+
+        
+        adicionarElementoAContenedor(contenedor, pagina);
+
+        
+        adicionarElementoABody(pagina);
+
+    </script>
+
+</body>
+</html>

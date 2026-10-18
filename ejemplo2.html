@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Pupo Castro">
+
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script src="js/ejercici2.js"></script>
+
+    <title>What We Do</title>
+</head>
+
+<body>
+
+<script>
+
+    
+    let h1 = crearNodoConTexto('h1', 'What We Do');
+    h1.classList.add('titulo');
+
+    adicionarElementoABody(h1);
+
+    
+    let descripcion = crearNodoConTexto(
+        'p',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    );
+
+    descripcion.classList.add('descripcion');
+
+    adicionarElementoABody(descripcion);
+
+    
+    let servicios = crearElemento('div');
+    servicios.classList.add('servicios');
+
+    
+    let servicio = crearElemento('div');
+    servicio.classList.add('servicio');
+
+    let imagen = crearElemento('img');
+    imagen.src = './recursos/imagenes/icons8-remoto-50.png';
+    imagen.alt = 'Market Analysis';
+    imagen.classList.add('icono');
+
+    let texto = crearElemento('div');
+    texto.classList.add('texto');
+
+    let h2 = crearNodoConTexto('h2', 'Opcion 1');
+
+    let parrafo = crearNodoConTexto(
+        'p',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    );
+
+    adicionarElementoAContenedor(imagen, servicio);
+    adicionarElementoAContenedor(h2, texto);
+    adicionarElementoAContenedor(parrafo, texto);
+    adicionarElementoAContenedor(texto, servicio);
+    adicionarElementoAContenedor(servicio, servicios);
+
+    
+    let servicioDos = crearElemento('div');
+    servicioDos.classList.add('servicio');
+
+    let imagenDos = crearElemento('img');
+    imagenDos.src = './recursos/imagenes/soporte tecnico.png';
+    imagenDos.alt = 'Fast Support';
+    imagenDos.classList.add('icono');
+
+    let textoDos = crearElemento('div');
+    textoDos.classList.add('texto');
+
+    let h2Dos = crearNodoConTexto('h2', 'Opcion 2');
+
+    let parrafoDos = crearNodoConTexto(
+        'p',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    );
+
+    adicionarElementoAContenedor(imagenDos, servicioDos);
+    adicionarElementoAContenedor(h2Dos, textoDos);
+    adicionarElementoAContenedor(parrafoDos, textoDos);
+    adicionarElementoAContenedor(textoDos, servicioDos);
+    adicionarElementoAContenedor(servicioDos, servicios);
+
+    
+    let servicioTres = crearElemento('div');
+    servicioTres.classList.add('servicio');
+
+    let imagenTres = crearElemento('img');
+    imagenTres.src = './recursos/imagenes/Desarrollo de software.png';
+    imagenTres.alt = 'Top Security';
+    imagenTres.classList.add('icono');
+
+    let textoTres = crearElemento('div');
+    textoTres.classList.add('texto');
+
+    let h2Tres = crearNodoConTexto('h2', 'Opcion 3');
+
+    let parrafoTres = crearNodoConTexto(
+        'p',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    );
+
+    let boton = crearNodoConTexto('button', 'Learn More');
+
+    adicionarElementoAContenedor(imagenTres, servicioTres);
+    adicionarElementoAContenedor(h2Tres, textoTres);
+    adicionarElementoAContenedor(parrafoTres, textoTres);
+    adicionarElementoAContenedor(boton, textoTres);
+    adicionarElementoAContenedor(textoTres, servicioTres);
+    adicionarElementoAContenedor(servicioTres, servicios);
+
+    
+    let servicioCuatro = crearElemento('div');
+    servicioCuatro.classList.add('servicio');
+
+    let imagenCuatro = crearElemento('img');
+    imagenCuatro.src = './recursos/imagenes/seguridad.png';
+    imagenCuatro.alt = 'Social Work';
+    imagenCuatro.classList.add('icono');
+
+    let textoCuatro = crearElemento('div');
+    textoCuatro.classList.add('texto');
+
+    let h2Cuatro = crearNodoConTexto(
+        'h2',
+        'Opcion 4'
+    );
+
+    let parrafoCuatro = crearNodoConTexto(
+        'p',
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    );
+
+    let botonDos = crearNodoConTexto('button', 'Details');
+
+    adicionarElementoAContenedor(imagenCuatro, servicioCuatro);
+    adicionarElementoAContenedor(h2Cuatro, textoCuatro);
+    adicionarElementoAContenedor(parrafoCuatro, textoCuatro);
+    adicionarElementoAContenedor(botonDos, textoCuatro);
+    adicionarElementoAContenedor(textoCuatro, servicioCuatro);
+    adicionarElementoAContenedor(servicioCuatro, servicios);
+
+    adicionarElementoABody(servicios);
+
+</script>
+
+</body>
+</html>
